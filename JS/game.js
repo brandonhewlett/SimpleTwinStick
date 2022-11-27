@@ -69,6 +69,7 @@ function playGame(){
 //Clicking stop button stops game
 function stopGame(){
     playingGame = false;
+    dieSound.play();
     //Clearing interval stops spawning function.
     //Necessary to stop zombie array from populating before game restart
     clearInterval(interval);
@@ -161,7 +162,6 @@ function play() {
         //Check for collision between zombie and player. If true, stops game
         if (zomCon.playerCollisionCheck(player.getX(), player.getY())){
             stopGame();
-            dieSound.play();
         }
     }
 }

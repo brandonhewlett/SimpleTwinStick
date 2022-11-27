@@ -133,8 +133,8 @@ export default class Player{
 
     //Reset player object to default before game restart
     resetToDefault(){
-        this.x = 0;
-        this.y = 0;
+        this.x = 240;
+        this.y = 160;
         this.rightPressed = false;
         this.leftPressed = false;
         this.upPressed = false;
