@@ -1,21 +1,21 @@
 # SimpleTwinStick
-A very simple twin-stick shooter developed entirely in javascript.
+A very simple twin-stick shooter developed entirely in javascript.\
 Go to https://brandonhewlett.github.io/SimpleTwinStick/ to play
 
 # Controls
-Movement: Arrow Keys
-Aim: Mouse
+Movement: Arrow Keys\
+Aim: Mouse\
 Shoot: Left click
 
 # Legend
-Player (you): Red Square
-Zombie: Green Square
+Player (you): Red Square\
+Zombie: Green Square\
 Aiming Point: Blue Circle
 
 # Objective
-Aim at zombies with your cursor to shoot and kill them.
-Move around to avoid getting caught by the zombies. One hit is game over.
-You may only shoot one bullet at a time, so be smart with your shots.
+Aim at zombies with your cursor to shoot and kill them.\
+Move around to avoid getting caught by the zombies. One hit is game over.\
+You may only shoot one bullet at a time, so be smart with your shots.\
 One kill is one point on the scoreboard. Try and get the highest score you can!
 
 # Acknowledgements
