@@ -17,9 +17,9 @@ const player = new Player(240, 160, 480, 320);
 const cursor = new Cursor(canvas);
 const zomCon = new zombieController();
 const scoreCon = new scoreController();
-const shootSound = new Audio('../Sounds/shoot.wav');
-const zombieDieSound = new Audio('../Sounds/zombieDie.wav');
-const dieSound = new Audio('../Sounds/die.wav');
+const shootSound = new Audio('./Sounds/shoot.wav');
+const zombieDieSound = new Audio('./Sounds/zombieDie.wav');
+const dieSound = new Audio('./Sounds/die.wav');
 var interval = null;
 var playingGame = false;
 
