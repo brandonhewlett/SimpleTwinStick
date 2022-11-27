@@ -2,16 +2,37 @@
 <html lang="en-ca">
     <head>
         <meta charset="utf-8" />
-        <title>Test Game</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Simple Twin Stick Shooter</title>
+        <link rel="stylesheet" href="CSS/style.css">
     </head>
     
     <body>
-        <script src="game.js" type="module"></script>
+        <script src="JS/game.js" type="module"></script>
         <div class = "gameArea">
             <canvas id="gameCanvas" width="480" height="320"></canvas>
             <button id="start">Start!</button>
         </div>
         <button id="stop" style="display: none">Stop</button>
+        <div class="gameDescription">
+            <h2>Controls</h2>
+            <h4>Movement: Arrow Keys</h4>
+            <h4>Aim: Mouse</h4>
+            <h4>Shoot: Left click</h4>
+            <br />
+            <h2>Legend</h2>
+            <h4>Player (you): Red Square</h4>
+            <h4>Zombie: Green Square</h4>
+            <h4>Aiming Point: Blue Circle</h4>
+            <br />
+            <h2>Objective</h2>
+            <p>
+                Aim at zombies with your cursor to shoot and kill them.<br>
+                Move around to avoid getting caught by the zombies. One hit is game over.<br>
+                You may only shoot one bullet at a time, so be smart with your shots.<br>
+                One kill is one point on the scoreboard. Try and get the highest score you can!<br>
+            </p>
+            <br>
+            <p>All sounds were created using <a href="https://sfbgames.itch.io/chiptone">Chiptone by SFB Games</a>, which allows all sounds created to be used freely for any purpose under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 License</a></p>
+        </div>
     </body>
 </html>

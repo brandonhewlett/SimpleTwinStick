@@ -1,6 +1,4 @@
 //TODO
-//Sounds
-//Description
 //Remove hard-coding
 //Multi-bullet mode?
 import Player from "./player.js";
@@ -19,6 +17,9 @@ const player = new Player(240, 160, 480, 320);
 const cursor = new Cursor(canvas);
 const zomCon = new zombieController();
 const scoreCon = new scoreController();
+const shootSound = new Audio('../Sounds/shoot.wav');
+const zombieDieSound = new Audio('../Sounds/zombieDie.wav');
+const dieSound = new Audio('../Sounds/die.wav');
 var interval = null;
 var playingGame = false;
 
@@ -33,6 +34,7 @@ function clickHandler(e) {
         var cx = cursor.getX();
         var cy = cursor.getY();
         player.shoot(cx, cy);
+        shootSound.play();
     }
 }
 
@@ -104,6 +106,7 @@ function play() {
         if (zomCon.bulletCollisionCheck(player.getBulletX(), player.getBulletY())){
             player.resetBullet();
             scoreCon.increaseScore();
+            zombieDieSound.play();
             //Difficulty modifiers
             //Lvl 1: Default (See lines 61-63).
             switch (scoreCon.getScore()){
@@ -158,6 +161,7 @@ function play() {
         //Check for collision between zombie and player. If true, stops game
         if (zomCon.playerCollisionCheck(player.getX(), player.getY())){
             stopGame();
+            dieSound.play();
         }
     }
 }
