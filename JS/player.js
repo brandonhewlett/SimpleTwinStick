@@ -72,7 +72,6 @@ export default class Player{
                 this.downPressed = true;
                 break;
             default:
-                console.log("What the hell am I doing?");
                 break;
         }
     }
@@ -93,7 +92,6 @@ export default class Player{
                 this.downPressed = false;
                 break;
             default:
-                console.log("What the hell am I doing?");
                 break;
         }
     }
