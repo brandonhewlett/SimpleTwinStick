@@ -77,7 +77,7 @@ export default class Player{
     }
     
     //Same as above, but handling key up
-    keyUpHandler = (e) => {;
+    keyUpHandler = (e) => {
         switch (e.key) {
             case "ArrowRight":
                 this.rightPressed = false;
